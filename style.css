@@ -11,7 +11,7 @@ body {
 }
 
 .button {
-  background-color: #93fa2d;
+  background-color: #36a7f7;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -24,7 +24,7 @@ body {
 }
 
 .button:hover {
-  background-color: #39db23;
+  background-color: #2a6fde;
   color: black;
 }
 
