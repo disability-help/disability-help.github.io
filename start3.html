@@ -3,14 +3,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-    <title> DisabilityHelp </title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <title> Social Security Benefits </title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
   </head>
+  <style>
+    h1 {
+      font-size: 2.2em;
+      padding-top: 15%;
+      font-family: "Times New Roman";
+      text-align: center;
+      margin: auto;
+    }
+    .select {
+      text-align: center;
+      margin: auto;
+    }
+    .flag1 {
+      width: 220px;
+      height: 116px;
+      margin-top: 10%;
+      margin-right: 10%;
+      cursor: pointer;
+    }
+    .flag2 {
+      width: 220px;
+      height: 116px;
+      margin-top: 10%;
+      margin-left: 10%;
+      cursor: pointer;
+    }
+    .flag1:hover {
+      transform: scale(1.1);
+    }
+    .flag2:hover {
+      transform: scale(1.1);
+    }
+  </style>
   <body>
-    <h1 class="animated fadeInDown"><span>Receive up to<br><b>$2788/mo</b><br>in disability payments<span></h1>
-    <div style="text-align:center;" class="animated infinite pulse"><a href="https://track.clickbooth.com/c/aff?lid=704136&subid1=&subid2=&subid3=&subid4=&subid5=&source_id=&google_aid=&ios_ifa=" class="button">Do I Qualify?</a></div>
-</body>
+    <h1>I am from...</h1>
+<table class="select">
+  <tr>
+    <td><img class="flag1" src="us.png" onclick="location.href='https://track.clickbooth.com/c/aff?lid=704136&subid1=&subid2=&subid3=&subid4=&subid5=&source_id=&google_aid=&ios_ifa=';"></td>
+    <td><img class="flag2" src="ca.png" onclick="location.href='https://track.clickbooth.com/c/aff?lid=704136&subid1=&subid2=&subid3=&subid4=&subid5=&source_id=&google_aid=&ios_ifa=';"></td>
+  </tr>
+</table>
+  </body>
 </html>
