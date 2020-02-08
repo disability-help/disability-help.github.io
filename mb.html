@@ -49,7 +49,13 @@
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 </style>
-<h1>I confirm I live in the <br> United States 🇺🇸<h1>
-<button class="btn-hover color-9" onclick="window.location.href='http://bit.ly/2vaCBVV';">Continue</button>
+<h1>I'm a citizen of the <br> United States 🇺🇸<h1>
+<button class="btn-hover color-9" onclick="window.location.href='http://bit.ly/2vaCBVV';">Yes</button>
+      <div class="popup animated slideInLeft delay-2s"><a>Last Sign Up From:</a> <b id="output"></b>📍</div>
+    <script>
+    var cities = ['Dallas', 'Los Angeles', 'Miami', 'Jacksonville', 'San Diego', 'New York', 'New Jersey', 'Houston', 'Orlando', 'Monterei', 'Salinas', 'Austin', 'San Antonio', 'Tampa', 'Edison', 'Long Island', 'Gainesville', 'Abilene', 'San Jose', 'Sacramento'];
+    var city = cities[Math.floor(Math.random()*cities.length)];
+    document.getElementById("output").innerHTML = city.toString();
+    </script>
 </body>
 </html>
