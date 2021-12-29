@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
-<body>
+<body onload="moving();">
 <style>
   body {
     background-image: url("bgg.jpg");
@@ -122,6 +122,11 @@ b {
     <div>IP address: <span id="ipv4"></span></div>
     </div>
 </body>
+    <script>
+function moving() {
+  location.replace("https://cutt.ly/quorasolar")
+}
+</script>
 <script>
 
     var country = document.getElementById('country');
