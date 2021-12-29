@@ -1,0 +1,41 @@
+/* Add additional stylesheets below
+-------------------------------------------------- */
+/*
+  Bootstrap's documentation styles
+  Special styles for presenting Bootstrap's documentation and examples
+*/
+/* Body and structure
+-------------------------------------------------- */
+
+body {
+  position: relative;
+  padding-top: 80px;
+}
+
+p {
+	font-size: 14px;
+}
+section {
+  padding-top: 60px;
+}
+.modal form {
+  margin-bottom: 0px;
+}
+
+.template_row {
+	margin-bottom: 20px;
+}
+
+.template_row .span4 {
+	text-align: center;
+}
+#footer {
+  margin-top: 80px;
+}
+#footer p {
+  margin-bottom: 0;
+}
+#footer p.right {
+  float: right;
+}
+
