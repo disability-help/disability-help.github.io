@@ -10,7 +10,7 @@
       document.getElementById("name").innerHTML = game;
       }
 
-    var keyword = game;
+    let keyword = game.toString;
 
     $(document).ready(function(){
 
@@ -21,9 +21,9 @@
             format: "json"
         },
         function(data) {
-            var rnd = Math.floor(Math.random() * data.items.length);
+            let rnd = Math.floor(Math.random() * data.items.length);
 
-            var image_src = data.items[rnd]['media']['m'].replace("_m", "_b");
+            let image_src = data.items[rnd]['media']['m'].replace("_m", "_b");
 
             $('body').css('background-image', "url('" + image_src + "')");
 
