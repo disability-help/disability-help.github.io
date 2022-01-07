@@ -33,7 +33,7 @@
   </style>
   <body>
     <h1> Download </h1><h1 id="name">Name of the game here</h1><h1> now (for Android only)</h1>
-    <img src="photo" id="photo">
+    <img src="" id="mainphoto">
     <button class="button">Download</button>
     <script>
       const queryString = window.location.search;
@@ -42,10 +42,10 @@
       if (urlParams.has('game')) {
       document.getElementById("name").innerHTML = game;
       }
-      let loremlink = 'url(https://loremflickr.com/1920/1080/' + game + ')'
-      let photolink = 'url(https://loremflickr.com/500/500/' + game + ')'
+      let loremlink = 'url(https://loremflickr.com/1920/1080/' + game + ')';
+      let photolink = 'url(https://loremflickr.com/500/500/' + game + ')';
       document.body.style.backgroundImage = loremlink;
-      document.getElementById('photo').src = photolink;
+      document.getElementById('mainphoto').src = photolink;
     </script>
   </body>
 </html>
