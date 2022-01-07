@@ -1,12 +1,13 @@
 <html>
   <body>
-    <h1 id="name">Name of the game here</h1>
+    <h1> Download </h1><h1 id="name">Name of the game here</h1><h1> now (for Android only)</h1>
     <script>
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
       const game = urlParams.get('game')
+      if (urlParams.has('game')) {
       document.getElementById("name").innerHTML = game;
-      console.log(game);
+      }
     </script>
   </body>
 </html>
