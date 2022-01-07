@@ -8,6 +8,9 @@
   h1 {
     color: white;
   }
+  img {
+  border: 7px solid white;
+  }
   body {
     font-family: 'Ubuntu', sans-serif;
     background-position: center;
@@ -43,7 +46,7 @@
       document.getElementById("name").innerHTML = game;
       }
       let loremlink = 'url(https://loremflickr.com/1920/1080/' + game + ')';
-      let photolink = 'https://loremflickr.com/500/500/' + game;
+      let photolink = 'https://loremflickr.com/300/300/' + game;
       document.body.style.backgroundImage = loremlink;
       document.getElementById('mainphoto').src = photolink;
     </script>
