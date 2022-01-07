@@ -1,6 +1,7 @@
 <html>
   <body>
     <h1> Download </h1><h1 id="name">Name of the game here</h1><h1> now (for Android only)</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
@@ -8,11 +9,8 @@
       if (urlParams.has('game')) {
       document.getElementById("name").innerHTML = game;
       }
-    </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript">
 
-    var keyword = "mountains";
+    var keyword = game;
 
     $(document).ready(function(){
 
