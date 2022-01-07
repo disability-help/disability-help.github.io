@@ -13,9 +13,8 @@
       if (urlParams.has('game')) {
       document.getElementById("name").innerHTML = game;
       }
-      let resolution = 'https://loremflickr.com/1920/1080/'
-      let loremlink = resolution.concat(game);
-      document.body.style.backgroundImage = "url(loremlink)";
+      let loremlink = 'url(https://loremflickr.com/1920/1080/' + game + ')'
+      document.body.style.backgroundImage = loremlink;
     </script>
   </body>
 </html>
