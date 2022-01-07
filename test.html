@@ -1,7 +1,12 @@
 <html>
+  <style>
+  body {
+    background-image: url('https://loremflickr.com/1920/1080/dog');
+    background-repeat: no-repeat;
+  }
+  </style>
   <body>
     <h1> Download </h1><h1 id="name">Name of the game here</h1><h1> now (for Android only)</h1>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
@@ -9,27 +14,9 @@
       if (urlParams.has('game')) {
       document.getElementById("name").innerHTML = game;
       }
-
-    let keyword = game;
-
-    $(document).ready(function(){
-
-        $.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
-        {
-            tags: keyword,
-            tagmode: "any",
-            format: "json"
-        },
-        function(data) {
-            let rnd = Math.floor(Math.random() * data.items.length);
-
-            let image_src = data.items[rnd]['media']['m'].replace("_m", "_b");
-
-            $('body').css('background-image', "url('" + image_src + "')");
-
-        });
-
-    });
+      let resolution = 'https://loremflickr.com/1920/1080/'
+      let loremlink = resolution.concat(game);
+      document.body.style.backgroundImage = "url(loremlink)";
     </script>
   </body>
 </html>
