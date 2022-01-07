@@ -19,31 +19,9 @@
     background-color: rgba(0,0,0,.8);
     background-blend-mode: multiply;
   }
-   .btn {
-    margin: 5px;
-    border-radius: 4px !important;
-  }
-  .btn .btn-download {
-    display: flex;
-    padding: 5px;
-  }
-
-  .btn .btn-download >span {
-    margin:5px;
-  }
   </style>
   <body>
     <h1> Download </h1><h1 id="name">Name of the game here</h1><h1> now (for Android only)</h1>
-    <a class="btn btn-primary">
-    <span class="btn-download">
-    <span class="icon-file-text-alt pull-right icon-3x"></span>
-    <span class="text-left">
-        Minecraft<br/>
-        Size: 324Mb
-      </span>
-    <span class="icon-cloud-download pull-right icon-3x"></span>
-    </span>
-  </a>
     <script>
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
