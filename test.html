@@ -1,12 +1,17 @@
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <style>
+  	#size,#date {
+    	margin-left: 2%;
+    }
     p {
       color: white;
+      margin-top: 1%;
     }
 
     h1 {
@@ -65,7 +70,19 @@
     <h2>(Android & iOS)</h2>
     <p>Click the button below to get the latest version</p>
     <img src="" id="mainphoto">
-    <br>
+    <div style="display: flex;">
+  	<p id="name">game</p>
+  	<p id="extension">.zip</p>
+	</div>
+    <div style="display: flex;">
+  	<p>File size:</p>
+  	<p id="size">134.87</p>
+    <p>MB</p>
+	</div>
+    <div style="display: flex;">
+  	<p>Uploaded: </p>
+  	<p id="date">2021-10-06</p>
+	</div>
     <button class="button">Download ⬇️</button>
     <script>
       const queryString = window.location.search;
@@ -78,6 +95,8 @@
       let photolink = 'https://loremflickr.com/300/300/' + game;
       document.body.style.backgroundImage = loremlink;
       document.getElementById('mainphoto').src = photolink;
+      let rndate = toString(getRandomInt(3));
+      document.getElementById("date").innerHTML = "Date : " + Date();
     </script>
   </body>
 </html>
