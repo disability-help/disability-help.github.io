@@ -95,8 +95,9 @@
       let photolink = 'https://loremflickr.com/300/300/' + game;
       document.body.style.backgroundImage = loremlink;
       document.getElementById('mainphoto').src = photolink;
-      let rndate = toString(getRandomInt(3));
-      document.getElementById("date").innerHTML = "Date : " + Date();
+      var date = new Date();
+      date.setDate(date.getDate() - 13);
+      document.getElementById("date").innerHTML = date;
     </script>
   </body>
 </html>
