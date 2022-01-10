@@ -63,6 +63,9 @@
       background-color: #2fb569;
       color: white;
     }
+    #mainphoto {
+    	border-radius: 25%;
+    }
   </style>
   <body>
     <h1>Download </h1>
@@ -95,9 +98,17 @@
       let photolink = 'https://loremflickr.com/300/300/' + game;
       document.body.style.backgroundImage = loremlink;
       document.getElementById('mainphoto').src = photolink;
-      var date = new Date();
-      date.setDate(date.getDate() - 13);
-      document.getElementById("date").innerHTML = date;
+      rnsize = ((Math.floor(Math.random() * 500))+ 1) + "." + ((Math.floor(Math.random() * 90))+ 1)
+      rndate = (((Math.floor(Math.random() * 10))+2012)+"-"+((Math.floor(Math.random() * 12))+1)+"-"+((Math.floor(Math.random() * 31))+1));
+      document.getElementById("date").innerHTML = rndate;
+      document.getElementById("size").innerHTML = rnsize;
+    const userAgent = navigator.userAgent;
+    if(/android/i.test(userAgent)){
+        document.getElementById("extension").innerHTML = '.apk';
+    }
+    if(/iPad|iPhone|iPod/i.test(userAgent)){
+        document.getElementById("extension").innerHTML = '.ipa';
+    }
     </script>
   </body>
 </html>
