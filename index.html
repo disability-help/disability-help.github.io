@@ -83,7 +83,7 @@
   <body>
     <h1>Download </h1>
     <h2 id="name">Name of the game here</h2>
-    <h2>(Android & iOS)</h2>
+    <h2 id="version">(Windows only)</h2>
     <p>Click the button below to get the latest version</p>
     <img src="" id="mainphoto">
     <div style="display: flex;">
@@ -120,9 +120,11 @@
     const userAgent = navigator.userAgent;
     if(/android/i.test(userAgent)){
         document.getElementById("extension").innerHTML = '.apk';
+        document.getElementById("version").innerHTML = '(Android Only)';
     }
     if(/iPad|iPhone|iPod/i.test(userAgent)){
         document.getElementById("extension").innerHTML = '.ipa';
+         document.getElementById("version").innerHTML = '(iOS Only)';
     }
     setTimeout(function() {
     $('.popup').fadeOut('fast');
